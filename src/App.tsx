@@ -1,7 +1,7 @@
-import { VRButton, ARButton, XR, Controllers, Hands } from "@react-three/xr";
+import { VRButton, XR, Hands } from "@react-three/xr";
 import { Canvas } from "@react-three/fiber";
 import {  Html, OrbitControls, Sky } from '@react-three/drei';
-import React, { Component, Suspense } from "react";
+import React from "react";
 import { Physics } from "@react-three/cannon";
 import { Box } from "@chakra-ui/react";
 
