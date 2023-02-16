@@ -1,4 +1,3 @@
-import { VRButton, XR, Hands } from "@react-three/xr";
 import { Canvas } from "@react-three/fiber";
 import {  Html, OrbitControls, Sky } from '@react-three/drei';
 import React from "react";
@@ -8,10 +7,7 @@ import { Box } from "@chakra-ui/react";
 function App() {
   return (
     <Box h="100vh">
-      <VRButton />
       <Canvas>
-        <XR>
-          <Hands />
           <Physics
             gravity={[0, -2, 0]}
             iterations={20}
@@ -47,7 +43,6 @@ function App() {
             </Html>
             <ambientLight intensity={0.5} />
           </Physics>
-        </XR>
       </Canvas>
     </Box>
   );
